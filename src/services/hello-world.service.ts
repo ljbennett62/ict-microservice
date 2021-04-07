@@ -12,7 +12,7 @@ export class HelloWorldService implements HelloWorldApi {
     this.logger = logger.child('HelloWorldService');
   }
 
-  async greeting(name: string = 'Demo'): Promise<string> {
+  async greeting(name: string = 'Demoo'): Promise<string> {
     this.logger.info(`Generating greeting for ${name}`);
     return `Hello, ${name}!`;
   }
